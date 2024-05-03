@@ -1,0 +1,88 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw6cn0l18ybby"]
+
+[ext_resource type="PackedScene" uid="uid://dr35pqekrxjhg" path="res://gui.tscn" id="1_w48es"]
+
+[node name="Shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GUI" parent="." instance=ExtResource("1_w48es")]
+visible = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+offset_left = 32.0
+offset_top = 256.0
+offset_right = 360.0
+offset_bottom = 690.0
+follow_focus = true
+horizontal_scroll_mode = 0
+scroll_deadzone = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(309, 492)
+layout_mode = 2
+
+[node name="TEST" type="Button" parent="ScrollContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "FIFTY
+"
+
+[node name="UpgradePlusFive" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "200"
+theme_override_font_sizes/font_size = 36
+text = "+5 per click"
+
+[node name="UpgradePlusTen" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "+10 per click"
+
+[node name="UpgradeAutoClick" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "+2 per sec"
+
+[node name="UpgradePlusHundred" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "+100 per click"
+
+[node name="UpgradePlusThousand" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "+1000 per click"
+
+[node name="UpgradePlusTenThousand" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "+10000 per click"
+
+[node name="UpgradePlusMillion" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "+100000 per click"
+
+[node name="UpgradeTimesTwo" type="Button" parent="ScrollContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "x2 per click"
+
+[node name="UpgradeTimesHundred" type="Button" parent="ScrollContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "x100 per click"
+
+[node name="UpgradeSetToZero" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "set score to zero"
