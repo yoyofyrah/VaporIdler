@@ -1,0 +1,138 @@
+[gd_scene load_steps=7 format=3 uid="uid://dr35pqekrxjhg"]
+
+[ext_resource type="VideoStream" path="res://assets/vid.ogv" id="1_8e7cp"]
+[ext_resource type="Texture2D" uid="uid://dvu1vaxo84i46" path="res://assets/BG.png" id="1_fyg18"]
+[ext_resource type="FontFile" uid="uid://eh5b6n5mnsdy" path="res://assets/water-resistant/WaterResistant.ttf" id="3_5iufc"]
+[ext_resource type="Texture2D" uid="uid://ci3oaisqgke0h" path="res://assets/noise.png" id="4_i5bja"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ng215"]
+font = ExtResource("3_5iufc")
+font_size = 72
+shadow_size = 15
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ielnc"]
+font = ExtResource("3_5iufc")
+font_size = 72
+font_color = Color(0.960784, 0.960784, 0.960784, 1)
+shadow_size = 15
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="ShopArea" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 720.0
+color = Color(0.803922, 0.705882, 0.858824, 1)
+
+[node name="ClickArea" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 384.0
+offset_right = 960.0
+offset_bottom = 720.0
+color = Color(1, 0.784314, 0.866667, 1)
+
+[node name="AchievementArea" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 960.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.768627, 0.87451, 0.984314, 1)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 1320.0
+offset_bottom = 720.0
+stream = ExtResource("1_8e7cp")
+autoplay = true
+loop = true
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(200, 360)
+scale = Vector2(1.25, 1)
+texture = ExtResource("1_fyg18")
+hframes = 4
+
+[node name="BG2" type="Sprite2D" parent="."]
+position = Vector2(1120, 360)
+texture = ExtResource("1_fyg18")
+hframes = 4
+
+[node name="BG3" type="Sprite2D" parent="."]
+position = Vector2(560, 11.25)
+scale = Vector2(0.7125, 1.34211)
+texture = ExtResource("1_fyg18")
+vframes = 37
+
+[node name="BG4" type="Sprite2D" parent="."]
+position = Vector2(564, 707)
+scale = Vector2(0.68125, 1.34211)
+texture = ExtResource("1_fyg18")
+vframes = 37
+
+[node name="UpgradesLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 144.0
+offset_right = 377.0
+offset_bottom = 227.0
+theme_override_font_sizes/font_size = 60
+text = "Upgrades"
+label_settings = SubResource("LabelSettings_ng215")
+
+[node name="AwardsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 989.0
+offset_top = 25.0
+offset_right = 1256.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 60
+text = "Awards"
+label_settings = SubResource("LabelSettings_ielnc")
+
+[node name="Shadow" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 211.0
+offset_right = 369.0
+offset_bottom = 220.0
+scale = Vector2(1.02691, 1.02691)
+color = Color(0, 0, 0, 1)
+
+[node name="ShopBar" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 213.0
+offset_right = 376.0
+offset_bottom = 218.0
+color = Color(0.972549, 0.972549, 0.972549, 1)
+
+[node name="Shadow2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 974.0
+offset_top = 88.0
+offset_right = 1258.0
+offset_bottom = 97.0
+scale = Vector2(1.02691, 1.02691)
+color = Color(0, 0, 0, 1)
+
+[node name="AwardsBar" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 90.0
+offset_right = 1264.0
+offset_bottom = 95.0
+color = Color(0.968627, 0.968627, 0.968627, 1)
+
+[node name="Noise" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("4_i5bja")

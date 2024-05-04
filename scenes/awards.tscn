@@ -1,0 +1,193 @@
+[gd_scene load_steps=3 format=3 uid="uid://b80ns2p3a80pw"]
+
+[ext_resource type="PackedScene" uid="uid://dr35pqekrxjhg" path="res://scenes/gui.tscn" id="1_22xtv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dmvis"]
+font_size = 36
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 0.937255)
+shadow_offset = Vector2(2, 1)
+
+[node name="Awards" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GUI" parent="." instance=ExtResource("1_22xtv")]
+visible = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+offset_left = 974.0
+offset_top = 96.0
+offset_right = 1274.0
+offset_bottom = 680.0
+follow_focus = true
+horizontal_scroll_mode = 0
+scroll_deadzone = 1
+
+[node name="Achievements" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="First" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "First!"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Second" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Ten!"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Third" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Damn!"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Fourth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Alright..."
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Fifth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "You can stop..."
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Sixth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Really?"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Seventh" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "This is boring"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Eighth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "I'mma head out"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Ninth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "hmm?"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Tenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "You're still here?"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Eleventh" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "You like this?"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Twelfth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Weirdo"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Thirteenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Still at it?"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Fourteenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Are ya winning?"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Fifteenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "lol"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Sixteenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Call your mother"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Seventeenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Go home"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Eighteenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "It's almost over"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Nineteenth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Keep it up!"
+label_settings = SubResource("LabelSettings_dmvis")
+
+[node name="Twentieth" type="Label" parent="ScrollContainer/Achievements"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Finished!"
+label_settings = SubResource("LabelSettings_dmvis")
