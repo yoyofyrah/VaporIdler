@@ -1,4 +1,4 @@
-# VaporClicker - A Vaporwave Styled Clicker Idler Game
+# VaporIdler - A Vaporwave Styled Clicker Idler Game
 
 Welcome to VaporIdler, where the neon lights never fade, and the clicks are endless! Dive into a retro-futuristic world of vaporwave aesthetics and addictive idling gameplay.
 
